@@ -1,0 +1,65 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    
+    line-height: 1.3em;
+    background-color: grey;
+}
+a, a:hover, a:focus, a:visited {text-decoration: none;}
+a {
+    color: $dark-blue;
+    transition: color .3s ease;
+    
+    &:hover{
+        color: $light-green
+    }
+}
+.btn {
+    background: linear-gradient(45deg,$light-blue,$light-green);    
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    &:hover {
+      background: linear-gradient(220deg,$light-blue,$light-green);    
+    }
+   }
+   
+header {
+    background-color: white;
+    padding: 1rem;
+}
+
+//Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-center{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.hidden {
+    display: none;
+}
